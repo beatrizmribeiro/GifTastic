@@ -24,20 +24,31 @@ $(document).ready(function(){
 
             var p= $('<p/>');
 
-            var rating = results[i].rating;
+          var rating = results[i].rating;
+
           var defaultAnimatedSrc = results[i].images.fixed_height.url;
+
           var staticSrc = results[i].images.fixed_height_still.url;
+
           var bandImage = $("<img>");
+
           var p = $("<p>").text("Rating: " + rating);
 
 
-              bandImage.attr("src", staticSrc);
+          bandImage.attr("src", staticSrc);
+
           bandImage.addClass("anImg");
+
           bandImage.attr("data-state", "still");
+
           bandImage.attr("data-still", staticSrc);
+
           bandImage.attr("data-animate", defaultAnimatedSrc);
+
           bandDiv.append(p);
+
           bandDiv.append(bandImage);
+          
           $("#gifs").prepend(bandDiv);
 
             }
@@ -102,20 +113,31 @@ $(document).ready(function(){
 
             var p= $('<p/>')
 
-               var rating = results[i].rating;
+          var rating = results[i].rating;
+
           var defaultAnimatedSrc = results[i].images.fixed_height.url;
+
           var staticSrc = results[i].images.fixed_height_still.url;
+
           var bandImage = $("<img>");
+
           var p = $("<p>").text("Rating: " + rating);
 
 
-              bandImage.attr("src", staticSrc);
+          bandImage.attr("src", staticSrc);
+
           bandImage.addClass("anImg");
+
           bandImage.attr("data-state", "still");
+
           bandImage.attr("data-still", staticSrc);
+
           bandImage.attr("data-animate", defaultAnimatedSrc);
+
           bandDiv.append(p);
+
           bandDiv.append(bandImage);
+
           $("#gifs").prepend(bandDiv);
 
       }
